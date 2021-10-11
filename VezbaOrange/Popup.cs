@@ -20,7 +20,7 @@ namespace VezbaOrange
 
             driver = new FirefoxDriver();
             driver.Manage().Window.Maximize();
-
+            driver.Manage().Window.Minimize();
 
         
         }
