@@ -221,7 +221,7 @@ namespace VezbaOrange.Steps
             //var data = editPage.UsernameEdField().GetAttribute("value");
            
             wait.Until(ExpectedConditions.TextToBePresentInElementValue(Driver.FindElement(By.Id("systemUser_userName")), eduser));
-            //Thread.Sleep(1000);
+            Thread.Sleep(100);
         }
 
        

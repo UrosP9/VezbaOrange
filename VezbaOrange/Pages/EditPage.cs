@@ -10,7 +10,6 @@ namespace VezbaOrange.Pages
     class EditPage
     {
         private readonly IWebDriver driver;
-        
 
         public EditPage(IWebDriver driver)
         {

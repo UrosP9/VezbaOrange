@@ -52,9 +52,9 @@ namespace VezbaOrange.Pages
             By status = By.Id("systemUser_status");
             return new SelectElement(driver.FindElement(status));
 
-            //WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(15));
-            //SelectElement se = new SelectElement(wait.Until(ExpectedConditions.ElementIsVisible(status)));
-            //return se;
+            WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(15));
+            SelectElement se = new SelectElement(wait.Until(ExpectedConditions.ElementIsVisible(status)));
+            return se;
         }
 
         public IWebElement PasswordAUField()
