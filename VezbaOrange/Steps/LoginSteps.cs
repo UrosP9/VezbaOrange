@@ -85,14 +85,9 @@ namespace VezbaOrange
 
 
         [Then(@"user can see errormessage for (.*) and (.*)")]
-            public void ThenUserCanSeeErrormessageForAnd(string Username, string Password)
-            {
+        public void ThenUserCanSeeErrormessageForAnd(string Username, string Password)
+        {
             string actualvalue = Driver.FindElement(By.Id("spanMessage")).Text;
-
-            LoginPage login = new LoginPage(Driver);
-
-            //var user = login.UsrnmField();
-            //var passw = login.PasswordField();
 
             if (Username != "" && Password != "")
             {
@@ -108,27 +103,8 @@ namespace VezbaOrange
             {
                 Assert.IsTrue(actualvalue.Contains("Password cannot be empty"));
             }
-            //if (user.Text != Username && passw.Text != Password)
-            //{
-            //    Assert.IsTrue(actualvalue.Contains("Invalid credentials"));
-            //}
 
-                //else if ((user.Text == Username && passw.Text != Password) || (user.Text == Username && passw.Text == Password))
-                //{
-                //    Assert.IsTrue(actualvalue.Contains("Username cannot be empty"));
-                //}
-
-                //else if (user.Text != Username && passw.Text == Password)
-                //{
-                //    Assert.IsTrue(actualvalue.Contains("Password cannot be empty"));
-                //}
         }
-
-
-
-
-        
-
 
     }
 }
