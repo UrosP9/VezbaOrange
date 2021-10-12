@@ -108,6 +108,8 @@ namespace VezbaOrange
             string nesto = string.Empty;
 
             
+            string pozdravnaPoruka = "Zdravo Urke :)";
+            Console.WriteLine(pozdravnaPoruka);
         }
 
     }
