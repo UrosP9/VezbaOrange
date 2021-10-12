@@ -17,12 +17,10 @@ namespace VezbaOrange
         [SetUp]
         public void Set()
         {
-
             driver = new FirefoxDriver();
             driver.Manage().Window.Maximize();
             driver.Manage().Window.Minimize();
-
-        
+            driver.Manage().Window.Maximize();
         }
 
         [Test]
