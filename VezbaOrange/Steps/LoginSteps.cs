@@ -105,7 +105,8 @@ namespace VezbaOrange
             {
                 Assert.IsTrue(actualvalue.Contains("Password cannot be empty"));
             }
-
+            string pozdravnaPoruka = "Zdravo Urke :)";
+            Console.WriteLine(pozdravnaPoruka);
         }
 
     }
