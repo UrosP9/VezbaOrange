@@ -105,7 +105,9 @@ namespace VezbaOrange
             {
                 Assert.IsTrue(actualvalue.Contains("Password cannot be empty"));
             }
+            string nesto = string.Empty;
 
+            
         }
 
     }
