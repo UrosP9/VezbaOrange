@@ -89,6 +89,8 @@ namespace VezbaOrange
         {
             string actualvalue = Driver.FindElement(By.Id("spanMessage")).Text;
 
+            string vezba = string.Empty;
+
             if (Username != "" && Password != "")
             {
                 Assert.IsTrue(actualvalue.Contains("Invalid credentials"));
